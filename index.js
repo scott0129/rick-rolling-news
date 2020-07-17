@@ -15,6 +15,7 @@ http.createServer(function(req, res){
             break
         case "/RollingNews.png":
             fs.readFile('RollingNews.png',function (err, data){
+                res.writeHead(200, {'Content-Type': 'image/png','Content-Length':data.length});
                 res.write(data);
                 res.end();
             });
