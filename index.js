@@ -5,7 +5,7 @@ const path = require('path');
 const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
-app.get('/RollingNews.png', (req, res) => res.sendFile(path.join(__dirname, 'RollingNews.png')));
+app.get('/RollingNews2.png', (req, res) => res.sendFile(path.join(__dirname, 'RollingNews.png')));
 app.all('*', function(req, res) {
   res.sendFile(path.join(__dirname, './redirect.html'));
 });
