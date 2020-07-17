@@ -13,6 +13,12 @@ http.createServer(function(req, res){
                 res.end();
             });
             break
+        case "/RollingNews.png":
+            fs.readFile('RollingNews.png',function (err, data){
+                res.write(data);
+                res.end();
+            });
+            break
         default:
             fs.readFile('redirect.html',function (err, data){
                 res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
