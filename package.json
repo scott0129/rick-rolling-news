@@ -1,0 +1,12 @@
+{
+  "name": "rick-rolling-news",
+  "version": "0.0.1",
+  "description": "A rick rolling website that shows news-like thumbnails and embeddings on social media posts",
+  "main": "index.js",
+  "repository": "https://github.com/scott0129/rick-rolling-news.git",
+  "author": "Scott Kim <scott102938@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+      "start": "node index.js"
+  }
+}
